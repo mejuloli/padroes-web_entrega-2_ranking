@@ -1,5 +1,114 @@
-html
-{
+/* Fontes, bordas, margens coerentes com o tema */
+body {
     background-color: #A2B2C8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+h3,li
+{
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    color: #1A2530;
+}
+
+.ranking-lista {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.ranking-lista li {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.ranking-lista h3 {
+    margin-top: 0;
+    color: #2C3E50;
+}
+
+figure {
+    margin: 15px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.justificativa {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+
+.img-ranking {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: filter 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+a{
+    color: #2980B9;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border: 1px solid #2980B9;
+    border-radius: 4px;
+}
+
+
+footer {
+    background-color: rgb(136, 133, 133);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .img-ranking {
+        max-width: 100%; 
+    }
 }
