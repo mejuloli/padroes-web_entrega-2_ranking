@@ -17,7 +17,6 @@ main {
     margin: 30px auto;
     padding: 30px;
     background-color: #FFFFFF;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
@@ -67,9 +66,6 @@ figcaption {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 8px;
-    transition: filter 0.4s ease, transform 0.4s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .rank-1, .rank-2 {
@@ -82,7 +78,6 @@ figcaption {
 
 .img-ranking:hover {
     filter: grayscale(0%) brightness(1.1);
-    transform: scale(1.02);
 }
 
 
@@ -91,12 +86,8 @@ a{
     color: #2980B9;
     text-decoration: none;
     font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
     padding: 8px 12px;
     border: 1px solid #2980B9;
-    border-radius: 4px;
 }
 
 a:visited {
@@ -130,7 +121,6 @@ footer {
 
 @media screen and (max-width: 600px) {
     header {
-        flex-direction: column;
         text-align: center;
         padding: 15px;
     }
@@ -176,69 +166,7 @@ picture {
 
 /* === FIM CATEGORIAS SERIES E FILMES === */
 
-/* === CABECALHO TAKE DOIS === */
 
-.cabecalho {
-    background-color: #1A2530;
-
-    text-align: center;
-
-    padding: 18px 20px;
-}
-
-.logo-site {
-    display: block;
-
-    width: 190px;
-    max-width: 100%;
-    height: auto;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    /* transforma a logo preta em branca */
-    filter: brightness(0) invert(1);
-}
-
-
-/* Logo clicável nas páginas individuais */
-
-.logo-link {
-    display: inline-block;
-
-    padding: 0;
-
-    border: none;
-
-    background-color: transparent;
-
-    text-decoration: none;
-}
-
-.logo-link:link,
-.logo-link:visited,
-.logo-link:hover,
-.logo-link:active {
-    border: none;
-
-    background-color: transparent;
-}
-
-
-/* Tela de celular */
-
-@media screen and (max-width: 600px) {
-
-    .cabecalho {
-        padding: 14px;
-    }
-
-    .logo-site {
-        width: 150px;
-    }
-}
-
-/* === FIM CABECALHO TAKE DOIS === */
 
 /* === ACABAMENTO VISUAL TAKE DOIS === */
 
@@ -698,111 +626,66 @@ footer p {
 
 /* === FIM ACABAMENTO VISUAL TAKE DOIS === */
 
-/* Alinhamento do ícone de busca nos links */
-.ranking-lista a svg,
-.voltar a svg {
+
+
+/* === CABECALHO FINAL === */
+
+.cabecalho {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    background-color: #162430;
+
+    text-align: center;
+
+    border-bottom: 3px solid #B8A47A;
+}
+
+.logo-site {
+    width: 72px;
+    height: auto;
+
     vertical-align: middle;
-    margin-right: 4px;
 }
 
-/* === AJUSTES DE ESPACO === */
+.nome-site {
+    margin-left: 8px;
 
-/* Cabeçalho mais compacto */
-.cabecalho {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    color: #FFFFFF;
+
+    vertical-align: middle;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    letter-spacing: 1px;
 }
 
-.logo-site {
-    width: 135px;
+.logo-link {
+    color: #FFFFFF;
+
+    text-decoration: none;
 }
 
-/* Aproveita melhor a largura no desktop */
-main {
-    width: 88%;
-    max-width: 980px;
+.logo-link:link,
+.logo-link:visited,
+.logo-link:hover,
+.logo-link:active {
+    color: #FFFFFF;
 
-    margin-top: 28px;
-    margin-bottom: 28px;
+    background-color: transparent;
 
-    padding-left: 45px;
-    padding-right: 45px;
-}
+    text-decoration: none;
 
-/* Menos recuo à esquerda no ranking */
-.ranking-lista {
-    padding-left: 22px;
-}
-
-.ranking-lista > li {
-    padding-left: 8px;
-}
-
-
-/* Mobile */
-@media screen and (max-width: 600px) {
-
-    .cabecalho {
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-    .logo-site {
-        width: 115px;
-    }
-
-    main {
-        width: auto;
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 8px;
-        margin-right: 8px;
-
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .ranking-lista {
-        padding-left: 18px;
-    }
-
-    .ranking-lista > li {
-        padding-left: 2px;
-    }
-}
-
-/* === FIM AJUSTES DE ESPACO === */
-
-/* === AJUSTE FINAL DE ALINHAMENTO === */
-
-/* Header mais compacto */
-.cabecalho {
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.logo-site {
-    width: 180px;
+    border: none;
 }
 
 
-/* Conteúdo mais confortável no desktop */
-main {
-    width: 82%;
-    max-width: 900px;
+/* Número e título do ranking na mesma linha */
 
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-
-/* Número e título ficam na mesma linha */
 .ranking-lista {
     padding-left: 24px;
-    list-style-position: outside;
 }
 
 .ranking-lista > li {
@@ -821,23 +704,28 @@ main {
     font-weight: normal;
 }
 
-
-/* Dá espaço antes do pôster */
 .ranking-lista > li > figure {
     margin-top: 25px;
 }
 
 
-/* Mobile */
+/* Ajuste para celular */
+
 @media screen and (max-width: 600px) {
 
     .cabecalho {
-        padding-top: 3px;
-        padding-bottom: 3px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
 
     .logo-site {
-        width: 150px;
+        width: 58px;
+    }
+
+    .nome-site {
+        margin-left: 6px;
+
+        font-size: 1.15rem;
     }
 
     main {
@@ -883,4 +771,91 @@ main {
     }
 }
 
-/* === FIM AJUSTE FINAL DE ALINHAMENTO === */
+/* === FIM CABECALHO FINAL === */
+
+/* Alinhamento dos ícones de busca */
+.ranking-lista a .material-icons,
+.voltar a .material-icons {
+    vertical-align: middle;
+    margin-right: 4px;
+    font-size: 18px;
+}
+
+/* === MARCA TAKE DOIS === */
+
+.cabecalho {
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    background-color: #162430;
+    text-align: center;
+
+    border-bottom: 3px solid #B8A47A;
+}
+
+.logo-site {
+    display: inline;
+
+    width: 70px;
+    height: auto;
+
+    margin: 0;
+
+    vertical-align: middle;
+
+    filter: brightness(0) invert(1);
+}
+
+.nome-site {
+    display: inline;
+
+    margin-left: 8px;
+
+    color: #FFFFFF;
+
+    vertical-align: middle;
+
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+.nome-site strong {
+    font-weight: 700;
+}
+
+.logo-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo-link:link,
+.logo-link:visited,
+.logo-link:hover,
+.logo-link:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .logo-site {
+        width: 52px;
+    }
+
+    .nome-site {
+        margin-left: 6px;
+        font-size: 0.75rem;
+    }
+}
+
+/* === FIM MARCA TAKE DOIS === */
