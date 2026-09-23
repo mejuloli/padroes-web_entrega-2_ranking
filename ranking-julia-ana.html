@@ -1,107 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ana Carolina Czelen Lipe">
     <meta name="author" content="julia">
     <link rel="stylesheet" href="ranking-julia-ana.css">
-    <title>Ranking das Melhores Séries e Filmes </title>
+    <title>Ranking de Séries e Filmes - Take Dois</title>
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="cabecalho">
+        <img class="logo-site" src="imagens/take-dois.svg" alt="Take Dois">
     </header>
 
     <main>
         <section class="intro">
-            <h2>Ranking das Melhores Séries</h2>
-            <p>Prepare a pipoca! Selecionamos as séries mais envolventes para você maratonar no seu tempo livre. Confira o nosso ranking definitivo e descubra o que torna cada uma delas tão especial.</p>
+            <h1>Ranking de Séries e Filmes</h1>
+            <p>
+                Prepare a pipoca! Reunimos nossas séries e filmes favoritos
+                para você conhecer cada item dos nossos rankings.
+            </p>
         </section>
 
-        <ol class="ranking-lista">
-            <li>
-                <h3>O Mentalista</h3>
-                <figure>
-                    <img src="imagens/mentalista.jpg" alt="Capa da série O Mentalista mostrando Patrick Jane" class="img-ranking rank-1">
-                    <figcaption>Poster oficial de O Mentalista</figcaption>
-                </figure>
-             
-                <p class="justificativa">Ocupa o 1º lugar porque a inteligência e o carisma do protagonista resolvem os casos de forma brilhante, prendendo a atenção do início ao fim.</p>
-            
-                <a href="serie-filme/mentalista.html" target="_blank">
-                <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m21 21-4.34-4.34" />
-                <circle cx="11" cy="11" r="8" />
-                </svg>     
-                    Saiba mais
-                </a>
-            </li>
+        <section class="categoria" id="top-series">
+            <h2>Top Séries</h2>
 
-            <li>
-                <h3>La Casa de Papel</h3>
-                <figure>
-                    <img src="imagens/laCasaDePapel.jpg" alt="Capa da série La Casa de Papel com personagens usando máscaras de Dalí" class="img-ranking rank-2">
-                    <figcaption>Cena icônica com as máscaras de Salvador Dalí</figcaption>
-                </figure>
-                <p class="justificativa">O 2º lugar é merecido pelo roteiro dinâmico e os planos de assalto geniais que deixam qualquer um na beira do sofá.</p>
-                <a href="serie-filme/laCasadePapel.html" target="_blank">
-                <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m21 21-4.34-4.34" />
-                <circle cx="11" cy="11" r="8" />
-                </svg>   
-                    Saiba mais
-                </a>
-            </li>
+            <ol class="ranking-lista ranking-series">
+                <li>
+                    <h3>O Mentalista</h3>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/mentalista.jpg">
+                            <img src="imagens/mentalista.jpg" alt="Capa da série O Mentalista mostrando Patrick Jane"
+                                class="img-ranking rank-1">
+                        </picture>
+                        <figcaption>Poster oficial de O Mentalista</figcaption>
+                    </figure>
 
-            <li>
-                <h3>Grimm</h3>
-                <figure>
-                    <img src="imagens/Grimm.jpg" alt="Capa da série Grimm" class="img-ranking rank-3">
-                    <figcaption>Arte promocional de Grimm</figcaption>
-                </figure>
-                <p class="justificativa">Fica em 3º lugar por sua criatividade em adaptar contos de fadas clássicos para um ambiente de investigação policial sombrio.</p>
-                <a href="serie-filme/grim.html" target="_blank">
-                <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m21 21-4.34-4.34" />
-                <circle cx="11" cy="11" r="8" />
-                </svg>    
-                    Saiba mais
-                </a>
-            </li>
+                    <p class="justificativa">Ocupa o 1º lugar porque a inteligência e o carisma do protagonista resolvem
+                        os casos de forma brilhante, prendendo a atenção do início ao fim.</p>
 
-            <li>
-                <h3>The Vampire Diaries</h3>
-                <figure>
-                    <img src="imagens/theDiaresVampire.jpg" alt="Capa da série Diário de um Vampiro" class="img-ranking rank-4">
-                    <figcaption>Os irmãos Salvatore e Elena</figcaption>
-                </figure>
-                <p class="justificativa">Garante o 4º lugar pelo intenso triângulo amoroso e a mitologia envolvente que marcou uma geração.</p>
-                <a href="serie-filme/theVampirediare.html" target="_blank">
-                <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m21 21-4.34-4.34" />
-                <circle cx="11" cy="11" r="8" />
-                </svg>                   
-                    Saiba mais
-                </a>
-            </li>
+                    <a href="serie-filme/mentalista.html" target="_blank">
+                        <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
 
-            <li>
-                <h3>Teen Wolf</h3>
-                <figure>
-                    <img src="imagens/teenwolf.jpg" alt="Capa da série Teen Wolf" class="img-ranking rank-5">
-                    <figcaption>Elenco principal de Teen Wolf</figcaption>
-                </figure>
-                <p class="justificativa">Em 5º lugar, a série se destaca por misturar humor adolescente com suspense sobrenatural de forma divertida.</p>
-                <a href="serie-filme/teenWolf.html" target="_blank">
-                    <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                     <path d="m21 21-4.34-4.34" />
-                    <circle cx="11" cy="11" r="8" />
-                    </svg>
-                     Saiba mais
-                </a>
-            </li>
-        </ol>
+                <li>
+                    <h3>La Casa de Papel</h3>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/laCasaDePapel.jpg">
+                            <img src="imagens/laCasaDePapel.jpg"
+                                alt="Capa da série La Casa de Papel com personagens usando máscaras de Dalí"
+                                class="img-ranking rank-2">
+                        </picture>
+                        <figcaption>Cena icônica com as máscaras de Salvador Dalí</figcaption>
+                    </figure>
+                    <p class="justificativa">O 2º lugar é merecido pelo roteiro dinâmico e os planos de assalto geniais
+                        que deixam qualquer um na beira do sofá.</p>
+                    <a href="serie-filme/laCasadePapel.html" target="_blank">
+                        <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+
+                <li>
+                    <h3>Grimm</h3>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/grimm.jpg">
+                            <img src="imagens/grimm.jpg" alt="Capa da série Grimm" class="img-ranking rank-3">
+                        </picture>
+                        <figcaption>Arte promocional de Grimm</figcaption>
+                    </figure>
+                    <p class="justificativa">Fica em 3º lugar por sua criatividade em adaptar contos de fadas clássicos
+                        para um ambiente de investigação policial sombrio.</p>
+                    <a href="serie-filme/grim.html" target="_blank">
+                        <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+
+                <li>
+                    <h3>The Vampire Diaries</h3>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/theVampireDiaries.jpg">
+                            <img src="imagens/theVampireDiaries.jpg" alt="Capa da série Diário de um Vampiro"
+                                class="img-ranking rank-4">
+                        </picture>
+                        <figcaption>Os irmãos Salvatore e Elena</figcaption>
+                    </figure>
+                    <p class="justificativa">Garante o 4º lugar pelo intenso triângulo amoroso e a mitologia envolvente
+                        que marcou uma geração.</p>
+                    <a href="serie-filme/theVampirediare.html" target="_blank">
+                        <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+
+                <li>
+                    <h3>Teen Wolf</h3>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/teenWolf.jpg">
+                            <img src="imagens/teenWolf.jpg" alt="Capa da série Teen Wolf" class="img-ranking rank-5">
+                        </picture>
+                        <figcaption>Elenco principal de Teen Wolf</figcaption>
+                    </figure>
+                    <p class="justificativa">Em 5º lugar, a série se destaca por misturar humor adolescente com suspense
+                        sobrenatural de forma divertida.</p>
+                    <a href="serie-filme/teenWolf.html" target="_blank">
+                        <svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="categoria" id="top-filmes">
+            <h2>Top Filmes</h2>
+
+            <ol class="ranking-lista ranking-filmes">
+                <li>
+                    <h3>Interestelar</h3>
+
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/interestelar.jpg">
+
+                            <img src="imagens/interestelar.jpg" alt="Pôster do filme Interestelar"
+                                class="img-ranking rank-1">
+                        </picture>
+
+                        <figcaption>
+                            Pôster de Interestelar
+                        </figcaption>
+                    </figure>
+
+                    <p class="justificativa">
+                        Ocupa o 1º lugar por combinar aventura espacial, emoção e uma história envolvente, criando uma
+                        experiência marcante do início ao fim.
+                    </p>
+
+                    <a href="serie-filme/interestelar.html" target="_blank" rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2">
+                            </circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+                <li>
+                    <h3>O Diabo Veste Prada 2</h3>
+
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/diabo-veste-prada-2.jpg">
+
+                            <img src="imagens/diabo-veste-prada-2.jpg" alt="Pôster do filme O Diabo Veste Prada 2"
+                                class="img-ranking rank-2">
+                        </picture>
+
+                        <figcaption>
+                            Pôster de O Diabo Veste Prada 2
+                        </figcaption>
+                    </figure>
+
+                    <p class="justificativa">
+                        Fica em 2º lugar por trazer novamente o universo da moda e das relações profissionais em uma
+                        história que chama a nossa atenção.
+                    </p>
+
+                    <a href="serie-filme/diabo-veste-prada-2.html" target="_blank" rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2">
+                            </circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+                <li>
+                    <h3>Harry Potter e o Prisioneiro de Azkaban</h3>
+
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)"
+                                srcset="imagens/mobile/harry-potter-prisioneiro-azkaban.jpg">
+
+                            <img src="imagens/harry-potter-prisioneiro-azkaban.jpg"
+                                alt="Pôster do filme Harry Potter e o Prisioneiro de Azkaban"
+                                class="img-ranking rank-3">
+                        </picture>
+
+                        <figcaption>
+                            Pôster de Harry Potter e o Prisioneiro de Azkaban
+                        </figcaption>
+                    </figure>
+
+                    <p class="justificativa">
+                        Está em 3º lugar por ampliar o universo mágico da série e apresentar uma história mais
+                        misteriosa, com momentos muito marcantes.
+                    </p>
+
+                    <a href="serie-filme/harry-potter-prisioneiro-azkaban.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2">
+                            </circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+                <li>
+                    <h3>Todo Mundo em Pânico 2</h3>
+
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/todo-mundo-em-panico-2.jpg">
+
+                            <img src="imagens/todo-mundo-em-panico-2.jpg" alt="Pôster do filme Todo Mundo em Pânico 2"
+                                class="img-ranking rank-4">
+                        </picture>
+
+                        <figcaption>
+                            Pôster de Todo Mundo em Pânico 2
+                        </figcaption>
+                    </figure>
+
+                    <p class="justificativa">
+                        Garante o 4º lugar pelo humor exagerado e pelas paródias de filmes de terror, sendo uma escolha
+                        divertida para assistir no tempo livre.
+                    </p>
+
+                    <a href="serie-filme/todo-mundo-em-panico-2.html" target="_blank" rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2">
+                            </circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+                <li>
+                    <h3>Invocação do Mal 2</h3>
+
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="imagens/mobile/invocacao-do-mal-2.jpg">
+
+                            <img src="imagens/invocacao-do-mal-2.jpg" alt="Pôster do filme Invocação do Mal 2"
+                                class="img-ranking rank-5">
+                        </picture>
+
+                        <figcaption>
+                            Pôster de Invocação do Mal 2
+                        </figcaption>
+                    </figure>
+
+                    <p class="justificativa">
+                        Fecha o Top 5 por criar uma atmosfera de suspense e terror que mantém a tensão durante a
+                        história.
+                    </p>
+
+                    <a href="serie-filme/invocacao-do-mal-2.html" target="_blank" rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2">
+                            </circle>
+                            <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2">
+                            </line>
+                        </svg>
+                        Saiba mais
+                    </a>
+                </li>
+            </ol>
+        </section>
     </main>
 
     <footer>
@@ -110,4 +318,5 @@
         <p>Cursando Sistemas da informação</p>
     </footer>
 </body>
+
 </html>

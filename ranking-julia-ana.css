@@ -134,13 +134,753 @@ footer {
         text-align: center;
         padding: 15px;
     }
-    
+
     main {
         margin: 10px;
         padding: 15px;
     }
 
     .img-ranking {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
+
+/* === CATEGORIAS SERIES E FILMES === */
+
+.categoria {
+    margin-top: 50px;
+}
+
+.categoria > h2 {
+    color: #1A2530;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border-bottom: 2px solid #1A2530;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+picture {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .categoria {
+        margin-top: 35px;
+    }
+
+    .categoria > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* === FIM CATEGORIAS SERIES E FILMES === */
+
+/* === CABECALHO TAKE DOIS === */
+
+.cabecalho {
+    background-color: #1A2530;
+
+    text-align: center;
+
+    padding: 18px 20px;
+}
+
+.logo-site {
+    display: block;
+
+    width: 190px;
+    max-width: 100%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* transforma a logo preta em branca */
+    filter: brightness(0) invert(1);
+}
+
+
+/* Logo clicável nas páginas individuais */
+
+.logo-link {
+    display: inline-block;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    text-decoration: none;
+}
+
+.logo-link:link,
+.logo-link:visited,
+.logo-link:hover,
+.logo-link:active {
+    border: none;
+
+    background-color: transparent;
+}
+
+
+/* Tela de celular */
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        padding: 14px;
+    }
+
+    .logo-site {
+        width: 150px;
+    }
+}
+
+/* === FIM CABECALHO TAKE DOIS === */
+
+/* === ACABAMENTO VISUAL TAKE DOIS === */
+
+
+/* ==========================================================
+   PÁGINA
+   ========================================================== */
+
+body {
+    margin: 0;
+
+    background-color: #E7ECF1;
+    color: #30373D;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   CABEÇALHO
+   ========================================================== */
+
+.cabecalho {
+    background-color: #162430;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    border-bottom: 3px solid #B8A47A;
+}
+
+.logo-site {
+    display: block;
+
+    width: 175px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================== */
+
+main {
+    width: 82%;
+    max-width: 860px;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 65px;
+    padding-right: 65px;
+
+    background-color: #FFFDFC;
+
+    border: 1px solid #D4D9DE;
+}
+
+
+/* ==========================================================
+   APRESENTAÇÃO
+   ========================================================== */
+
+.intro {
+    margin-bottom: 65px;
+    padding-bottom: 35px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #D6D8D9;
+}
+
+.intro h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    color: #162430;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.35rem;
+
+    letter-spacing: 1px;
+}
+
+.intro p {
+    max-width: 620px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #687078;
+
+    font-size: 0.98rem;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   CATEGORIAS
+   ========================================================== */
+
+.categoria {
+    margin-top: 70px;
+}
+
+.categoria:first-of-type {
+    margin-top: 0;
+}
+
+.categoria > h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    padding-bottom: 12px;
+
+    color: #162430;
+
+    border-bottom: 1px solid #B8A47A;
+
+    font-size: 1.55rem;
+    font-weight: normal;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   LISTA
+   ========================================================== */
+
+.ranking-lista {
+    margin: 0;
+
+    padding-left: 32px;
+}
+
+.ranking-lista > li {
+    margin-bottom: 55px;
+
+    padding-left: 15px;
+    padding-bottom: 50px;
+
+    border-bottom: 1px solid #E0E2E3;
+}
+
+.ranking-lista > li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+
+    border-bottom: none;
+}
+
+.ranking-lista h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    color: #162430;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+
+    font-weight: normal;
+}
+
+
+/* ==========================================================
+   IMAGENS
+   ========================================================== */
+
+figure {
+    margin-top: 25px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+figure img,
+.img-ranking {
+    display: block;
+
+    width: 285px;
+    max-width: 100%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid #C8CDD1;
+}
+
+figcaption {
+    margin-top: 10px;
+
+    color: #7A8085;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+
+/* ==========================================================
+   JUSTIFICATIVA
+   ========================================================== */
+
+.justificativa {
+    max-width: 700px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding-left: 18px;
+
+    color: #454C52;
+
+    border-left: 2px solid #B8A47A;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   LINKS
+   ========================================================== */
+
+.ranking-lista a,
+.voltar a {
+    display: inline-block;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-color: #162430;
+    color: #FFFFFF;
+
+    border: 1px solid #162430;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    text-decoration: none;
+}
+
+.ranking-lista a:visited,
+.voltar a:visited {
+    background-color: #38434D;
+    color: #FFFFFF;
+
+    border-color: #38434D;
+}
+
+.ranking-lista a:hover,
+.voltar a:hover {
+    background-color: #FFFFFF;
+    color: #162430;
+
+    border-color: #162430;
+}
+
+.ranking-lista a:active,
+.voltar a:active {
+    background-color: #B8A47A;
+    color: #162430;
+
+    border-color: #B8A47A;
+}
+
+
+/* ==========================================================
+   PÁGINAS DE DETALHES
+   ========================================================== */
+
+main > section > h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    color: #162430;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+
+    text-align: center;
+}
+
+main > section > h1 + p {
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    color: #7A8085;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+}
+
+main > section > h2 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+
+    padding-bottom: 10px;
+
+    color: #162430;
+
+    border-bottom: 1px solid #B8A47A;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+main > section > p {
+    color: #454C52;
+
+    line-height: 1.8;
+}
+
+.voltar {
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   RODAPÉ
+   ========================================================== */
+
+footer {
+    margin-top: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: #162430;
+    color: #DDE3E7;
+
+    text-align: center;
+
+    border-top: 3px solid #B8A47A;
+}
+
+footer p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   CELULAR
+   ========================================================== */
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .logo-site {
+        width: 145px;
+    }
+
+    main {
+        width: 84%;
+
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .intro {
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+    }
+
+    .intro h1 {
+        font-size: 1.75rem;
+    }
+
+    .intro p {
+        font-size: 0.92rem;
+    }
+
+    .categoria {
+        margin-top: 50px;
+    }
+
+    .categoria > h2 {
+        margin-bottom: 25px;
+
+        font-size: 1.25rem;
+
+        letter-spacing: 1px;
+    }
+
+    .ranking-lista {
+        padding-left: 25px;
+    }
+
+    .ranking-lista > li {
+        margin-bottom: 38px;
+
+        padding-left: 5px;
+        padding-bottom: 35px;
+    }
+
+    .ranking-lista h3 {
+        font-size: 1.25rem;
+    }
+
+    figure img,
+    .img-ranking {
+        width: 255px;
+    }
+
+    .justificativa {
+        padding-left: 12px;
+
+        font-size: 0.95rem;
+    }
+
+    main > section > h1 {
+        font-size: 1.7rem;
+    }
+
+    main > section > h2 {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* === FIM ACABAMENTO VISUAL TAKE DOIS === */
+
+/* Alinhamento do ícone de busca nos links */
+.ranking-lista a svg,
+.voltar a svg {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* === AJUSTES DE ESPACO === */
+
+/* Cabeçalho mais compacto */
+.cabecalho {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-site {
+    width: 135px;
+}
+
+/* Aproveita melhor a largura no desktop */
+main {
+    width: 88%;
+    max-width: 980px;
+
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/* Menos recuo à esquerda no ranking */
+.ranking-lista {
+    padding-left: 22px;
+}
+
+.ranking-lista > li {
+    padding-left: 8px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .logo-site {
+        width: 115px;
+    }
+
+    main {
+        width: auto;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .ranking-lista {
+        padding-left: 18px;
+    }
+
+    .ranking-lista > li {
+        padding-left: 2px;
+    }
+}
+
+/* === FIM AJUSTES DE ESPACO === */
+
+/* === AJUSTE FINAL DE ALINHAMENTO === */
+
+/* Header mais compacto */
+.cabecalho {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.logo-site {
+    width: 180px;
+}
+
+
+/* Conteúdo mais confortável no desktop */
+main {
+    width: 82%;
+    max-width: 900px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* Número e título ficam na mesma linha */
+.ranking-lista {
+    padding-left: 24px;
+    list-style-position: outside;
+}
+
+.ranking-lista > li {
+    padding-left: 5px;
+}
+
+.ranking-lista > li > h3 {
+    display: inline;
+
+    margin: 0;
+
+    color: #162430;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+    font-weight: normal;
+}
+
+
+/* Dá espaço antes do pôster */
+.ranking-lista > li > figure {
+    margin-top: 25px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .logo-site {
+        width: 150px;
+    }
+
+    main {
+        width: 82%;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .ranking-lista {
+        padding-left: 22px;
+    }
+
+    .ranking-lista > li {
+        padding-left: 2px;
+    }
+
+    .ranking-lista > li > h3 {
+        font-size: 1.15rem;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    figure img,
+    .img-ranking {
+        width: 245px;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* === FIM AJUSTE FINAL DE ALINHAMENTO === */
