@@ -1,4 +1,4 @@
-/* Fontes, bordas, margens coerentes com o tema */
+
 body {
     background-color: #A2B2C8;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -72,6 +72,19 @@ figcaption {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.rank-1, .rank-2 {
+    filter: brightness(1.1);
+}
+
+.rank-3, .rank-4, .rank-5 {
+    filter: grayscale(80%);
+}
+
+.img-ranking:hover {
+    filter: grayscale(0%) brightness(1.1);
+    transform: scale(1.02);
+}
+
 
 
 a{
@@ -86,6 +99,21 @@ a{
     border-radius: 4px;
 }
 
+a:visited {
+    color: #5D3FD3;
+    border-color: #5D3FD3;
+}
+
+a:hover {
+    background-color: #2980B9;
+    color: #FFFFFF;
+}
+
+a:active {
+    background-color: #004183;
+    border-color: #003569;
+}
+
 
 footer {
     background-color: rgb(136, 133, 133);
@@ -94,7 +122,11 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+.voltar
+{
+    text-align: center;
 
+}
 
 @media screen and (max-width: 600px) {
     header {
